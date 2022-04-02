@@ -3,7 +3,7 @@
 
 void main()
 {
-    system("cls");
+    system("clear");
 
     int ogrno, i;
 
