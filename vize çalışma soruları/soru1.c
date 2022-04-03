@@ -17,7 +17,12 @@ void main()
         isimUzunluk++;
     }
 
-    int no = 2 + 1 + 1 + 0 + 2 + 0 + 5 + 0 + 1 + 9;
+    char studentNo[] = "2110205019";
+
+    int no = 0;
+
+    for (int i = 0; i < strlen(studentNo); i++) // burdaki işlem char olan sayıları int formatına çeviriyor.
+        no += *(studentNo + i) - '0';
 
     str = (char *)realloc(str, no);
 
