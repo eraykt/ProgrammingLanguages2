@@ -4,7 +4,7 @@
 void main()
 {
     system("cls");
-
+    /*----------------------------------------------*/
     char *string = (char *)calloc(1, sizeof(char));
     char c;
     int size = 0;
@@ -17,4 +17,5 @@ void main()
         string = (char *)realloc(string, size + 1);
     }
     *(string + size) = '\0';
+    /*----------------------------------------------*/
 }
